@@ -1,0 +1,7 @@
+.btn {
+    color : $color-white;
+    background: linear-gradient(to bottom right, $color-secondary,$color-primary);
+    padding : 20px;
+    border-radius: 28px;
+    @include shadow_grey;
+}

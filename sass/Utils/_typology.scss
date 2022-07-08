@@ -2,8 +2,8 @@
     font-family: "Roboto", sans-serif;
 }
 
-footer a, footer h1 {
-    color: $color-footer;
+.location {
+    font-weight: 400;
 }
 
 h1 {
@@ -12,3 +12,15 @@ h1 {
     margin-bottom: 0;
 }
 
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+footer a, footer h1 {
+    color: $color-white;
+}
