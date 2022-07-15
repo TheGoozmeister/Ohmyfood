@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+header {
+    height:$height-header;
+}
+
 .header__logo {
     text-align: center;
     img {
@@ -14,6 +18,8 @@
 
 footer {
     display: flex;
+    z-index: 1;
+    width: 100%;
     flex-direction: column;
     background-color: $color-footer-bg;
         h1{

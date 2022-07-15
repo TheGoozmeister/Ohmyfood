@@ -12,138 +12,155 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap" rel="stylesheet">        
     </head>
     <body>
-        <header>
-            <div class ="header__logo">
-                <img src="images/logo/ohmyfood@2x.svg" alt="logo">
+        <div class="loader">
+            <div class="loader__text">
+                ohmyfood
             </div>
-        </header>
-        <div class="location">
-            <i class="fa-solid fa-location-dot"></i> Paris, Belleville          
-        </div>
-        <div class="explore">
-            <h2>Réservez le menu qui vous convient</h2>
-            <h3>Découvrez des restaurants d'exception, sélectionnés par nos soins.</h3>
-            <a href="#list_restaurants"><div class="btn">
-                Explorez nos restaurants
-            </div></a>
-        </div>
-        <h2 class="functionment__title">Fonctionnement</h2>
-        <div class="functionment">
-            <div class="functionment__indication">
-                <div class="functionment__indication__number">1</div>
-                <i class="fa-solid fa-mobile-screen-button"></i>
-                Choisissez un restaurant
-            </div>
-            <div class="functionment__indication">
-                <div class="functionment__indication__number">2</div>
-                <i class="fa-solid fa-list-ul"></i>
-                Composez votre menu
-            </div>
-            <div class="functionment__indication" id="indication__colored">
-                <div class="functionment__indication__number">3</div>
-                <i class="fa-solid fa-store"></i>
-                Dégustez au restaurant
+            <div class="loader__progress">
+                <div class="loader__progress__bar">
+                </div>
             </div>
         </div>
-        <div class="restaurants" id="list_restaurants">
-            <h2>Restaurants</h2>
-            <a href="palette_gout.html">
-                <div class="rcard">   
-                    <div class="rcard__image">
-                        <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="palette_gout" /> 
-                        <div class="rcard__image__new">Nouveau</div>
-                    </div>
-                    <div class="rcard__body">
-                        <div class="rcard__body__infos">
-                            <div class="rcard__body__infos__name">
-                                La palette du goût
+        <div class="bloc-page">
+            <header>
+                <div class ="header__logo">
+                    <img src="images/logo/ohmyfood@2x.svg" alt="logo">
+                </div>
+            </header>
+            <div class="location">
+                <i class="fa-solid fa-location-dot"></i> Paris, Belleville          
+            </div>
+            <div class="explore">
+                <h2>Réservez le menu qui vous convient</h2>
+                <h3>Découvrez des restaurants d'exception, sélectionnés par nos soins.</h3>
+                <a href="#list_restaurants"><div class="btn">
+                    Explorer nos restaurants
+                </div></a>
+            </div>
+            <h2 class="functionment__title">Fonctionnement</h2>
+            <div class="functionment">
+                <div class="functionment__indication">
+                    <div class="functionment__indication__number">1</div>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    Choisissez un restaurant
+                </div>
+                <div class="functionment__indication">
+                    <div class="functionment__indication__number">2</div>
+                    <i class="fa-solid fa-list-ul"></i>
+                    Composez votre menu
+                </div>
+                <div class="functionment__indication" id="indication__colored">
+                    <div class="functionment__indication__number">3</div>
+                    <i class="fa-solid fa-store"></i>
+                    Dégustez au restaurant
+                </div>
+            </div>
+            <div class="restaurants" id="list_restaurants">
+                <h2>Restaurants</h2>
+                <a href="palette_gout.html">
+                    <div class="rcard">   
+                        <div class="rcard__image">
+                            <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="palette_gout" /> 
+                            <div class="rcard__image__new">Nouveau</div>
+                        </div>
+                        <div class="rcard__body">
+                            <div class="rcard__body__infos">
+                                <div class="rcard__body__infos__name">
+                                    La palette du goût
+                                </div>
+                                <div class="rcard__body__infos__location">
+                                    Ménilmontant
+                                </div>
                             </div>
-                            <div class="rcard__body__infos__location">
-                                Ménilmontant
-                            </div>
-                        </div>
-                        <div class="rcard__body__heart">
-                            <i class="fa-regular fa-heart"></i>
-                            <div class="rcard__body__heart__full">
-                                <i class="fa-solid fa-heart"></i>
+                            <div class="rcard__body__heart">
+                                <i class="fa-regular fa-heart"></i>
+                                <div class="rcard__body__heart__full">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </a>
-            <div class="rcard">
-                <div class="rcard__image">
-                    <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="note_enchantee">
-                        <div class="rcard__image__new">Nouveau</div>
-                </div>
-                <div class="rcard__body">
-                    <div class="rcard__body__infos">
-                        <div class="rcard__body__infos__name">
-                            La note enchantée
+                </a>
+                <a href="note_enchantee.html">
+                    <div class="rcard">
+                        <div class="rcard__image">
+                            <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="note_enchantee">
+                                <div class="rcard__image__new">Nouveau</div>
                         </div>
-                        <div class="rcard__body__infos__location">
-                            Charonne
+                        <div class="rcard__body">
+                            <div class="rcard__body__infos">
+                                <div class="rcard__body__infos__name">
+                                    La note enchantée
+                                </div>
+                                <div class="rcard__body__infos__location">
+                                    Charonne
+                                </div>
+                            </div>
+                            <div class="rcard__body__heart">
+                                <i class="fa-regular fa-heart"></i>
+                                <div class="rcard__body__heart__full">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="rcard__body__heart">
-                        <i class="fa-regular fa-heart"></i>
-                        <div class="rcard__body__heart__full">
-                            <i class="fa-solid fa-heart"></i>
+                </a>
+                <a href="francaise.html">
+                    <div class="rcard">
+                        <div class="rcard__image">
+                            <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="francaise">
+                        </div>
+                        <div class="rcard__body">
+                            <div class="rcard__body__infos">
+                                <div class="rcard__body__infos__name">
+                                    À la française
+                                </div>
+                                <div class="rcard__body__infos__location">
+                                    Cité rouge
+                                </div>
+                            </div>
+                            <div class="rcard__body__heart">
+                                <i class="fa-regular fa-heart"></i>
+                                <div class="rcard__body__heart__full">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
+                <a href="delice_sens.html">
+                    <div class="rcard">
+                        <div class="rcard__image">
+                            <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="delice_sens">
+                        </div>
+                        <div class="rcard__body">
+                            <div class="rcard__body__infos">
+                                <div class="rcard__body__infos__name">
+                                    Le délice des sens
+                                </div>
+                                <div class="rcard__body__infos__location">
+                                    Folie-Méricourt
+                                </div>
+                            </div>
+                            <div class="rcard__body__heart">
+                                <i class="fa-regular fa-heart"></i>
+                                <div class="rcard__body__heart__full">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="rcard">
-                <div class="rcard__image">
-                    <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="francaise">
-                </div>
-                <div class="rcard__body">
-                    <div class="rcard__body__infos">
-                        <div class="rcard__body__infos__name">
-                            À la française
-                        </div>
-                        <div class="rcard__body__infos__location">
-                            Cité rouge
-                        </div>
-                    </div>
-                    <div class="rcard__body__heart">
-                        <i class="fa-regular fa-heart"></i>
-                        <div class="rcard__body__heart__full">
-                            <i class="fa-solid fa-heart"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="rcard">
-                <div class="rcard__image">
-                    <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="delice_sens">
-                </div>
-                <div class="rcard__body">
-                    <div class="rcard__body__infos">
-                        <div class="rcard__body__infos__name">
-                            Le délice des sens
-                        </div>
-                        <div class="rcard__body__infos__location">
-                            Folie-Méricourt
-                        </div>
-                    </div>
-                    <div class="rcard__body__heart">
-                        <i class="fa-regular fa-heart"></i>
-                        <div class="rcard__body__heart__full">
-                            <i class="fa-solid fa-heart"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <footer>
+                <h1>ohmyfood</h1>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-utensils"></i> Proposer un restaurant</a></li>
+                    <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="mailto:contact@mail.com">Contact</a></li>
+                </ul>
+            </footer>
         </div>
-        <footer>
-            <h1>ohmyfood</h1>
-            <ul>
-                <li><a href="#"><i class="fa-solid fa-utensils"></i> Proposer un restaurant</a></li>
-                <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
-                <li><a href="#">Mentions légales</a></li>
-                <li><a href="mailto:contact@mail.com">Contact</a></li>
-            </ul>
-        </footer>
     </body>
 </html>

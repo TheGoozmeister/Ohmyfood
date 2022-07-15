@@ -39,11 +39,12 @@
     }
     &__indication {
         width: 80%;
+        font-weight: 600;
         position: relative;
         background-color: $color-grey;
         display: flex;
         padding: 30px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         border-radius: 20px;
         @include shadow_grey;
         &__number {
@@ -140,4 +141,48 @@
             
         }
     }
+}
+
+.loader {
+    position: absolute;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: $color-grey;
+    animation: loader-disparition 0s ($duration-loader+$delay-loader) forwards;
+    &__text {
+        font-family:"Shrikhand", sans-serif ;
+        font-size: 30px;
+        margin-bottom: 15px;
+        color: black;
+        opacity: 0;
+        animation:text-opacity $duration-loader backwards infinite;
+    }
+    &__progress {
+        border : solid 1px $color-primary;
+        height: 15px;
+        width : 60%;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__bar {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom right, $color-secondary,$color-primary);
+            border-radius: 10px;
+            transform-origin: left;
+            transform: scale(0);
+            animation: progress-bar $duration-loader 1s;
+        }
+    }
+}
+
+.bloc-page {
+    animation : main-apparition 0s ($duration-loader+$delay-loader);
+    animation-fill-mode: backwards;
 }

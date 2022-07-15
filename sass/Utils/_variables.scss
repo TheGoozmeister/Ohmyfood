@@ -5,8 +5,18 @@ $color-footer-bg : #535353;
 $color-white : white;
 $color-grey : rgb(246,246,246);
 
-$timing-check : 0.5s;
-$apparition-duration : 1s;
+$duration-loader : 2000ms;      //Loading index
+$delay-loader : 1000ms;
 
-$nbrmax__dishes : 10;
-$anim-delay : 0.6s;
+
+$nbrmax__dishes : 10;       
+$apparition-duration : 1s;      //Loading menu
+$anim-delay : 0.2s;
+
+
+$timing-check : 0.5s;       //Duration check-box
+
+$height-header : 85px;
+$height-image : 250px;
+
+

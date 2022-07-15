@@ -10,8 +10,11 @@
 }
 
 .image-bg {
-    width: 50%;
-    height: 200px;
+    width: 100%;
+    height: $height-image;
+    position: absolute;
+    display: flex;
+    justify-content: center;
     overflow: hidden;
     img {
         width: 100%;
@@ -20,35 +23,41 @@
 }
 
 .menu {
-    border-radius: 10px;
+    position: absolute;
+    top : ($height-image+$height-header)-30px;
+    border-radius: 30px;
     background-color: $color-grey;
     display: flex;
     flex-direction: column;
     align-items:center;
     width: 100%;
     padding: 20px;
+    padding-bottom: 100px;
     &__title {
         display: flex;
         width: 100%;
+        font-size: 13px;
         justify-content: space-between;
+        align-items: baseline;
         margin-bottom: 30px;
+        &__heart {
+            font-size: 30px;
+        }
     }
     &__type__title {
         font-weight: 300;
         text-transform: uppercase;
-        font-size: 18px;
-        margin-top: 30px;
+        font-size: 15px;
     }
-}
-
-.menu__type {
-    width: 100%;
+    &__type {
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
 
 .dish {
     background-color: $color-white;
     margin-bottom: 15px;
-    padding-left: 10px;
     width: 100%;
     height: 60px;
     border-radius: 15px;
@@ -61,10 +70,10 @@
     @include shadow_grey;
     &__infos {
         display: flex;
+        padding : 0 3% 0 3%;
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-end;
-        margin-right: 20px;
         width: 100%;
         transition: width $timing-check;
         &__text {
@@ -98,9 +107,9 @@
     }
     
     &__checked {
-        height: 100%;
+        height:110%;
         width: 0%;
-        border-radius: 0 15px 15px 0;
+        border-radius: 0 10px 10px 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -127,18 +136,22 @@
     &:hover >&__infos {
         width: 80%;
     }
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .border {
-    width: 50px;
+    width: 40px;
     height: 2px;
     border: solid 2px $color-tertiary;
-    margin: 2px 0 15px 0;
+    margin: 6px 0 15px 0;
 }
-
 
 @for $i from 1 through $nbrmax__dishes {
     #dish-#{$i} {
-        animation-duration: $anim-delay*$i;
+        animation-fill-mode: backwards;
+        animation-delay: $anim-delay*$i;
     }
 }
+

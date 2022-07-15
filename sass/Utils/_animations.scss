@@ -1,0 +1,59 @@
+@keyframes menu-apparition {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes progress-bar {
+    0% {
+        transform: scaleX(0);
+        opacity: 0.1;
+    }
+    32% {
+        transform:scaleX(0.4);
+        opacity:0.5;
+    }
+    54% {
+        transform: scaleX(0.6);
+    }
+    73% {
+        transform: scaleX(0.8);
+        opacity: 0.8;
+    }
+    100% {
+        transform : scaleX(1);
+    }
+}
+
+@keyframes text-opacity {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.01;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes  main-apparition {
+    0% {
+        transform : translate(-9999px);
+    }
+    100% { 
+        transform: translate(0);
+    }
+}
+
+@keyframes loader-disparition {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform : scale(0);
+    }
+}

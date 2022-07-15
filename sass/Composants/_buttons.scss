@@ -1,7 +1,14 @@
 .btn {
     color : $color-white;
+    width: 220px;
+    text-align: center;
     background: linear-gradient(to bottom right, $color-secondary,$color-primary);
-    padding : 20px;
+    padding : 15px 10px 15px 10px;
     border-radius: 28px;
-    @include shadow_grey;
+    @include shadow_grey(20%,4px);
+    &:hover {
+        background: linear-gradient(to bottom right, lighten($color-secondary,3%),lighten($color-primary,3%));
+        cursor:pointer;
+        @include shadow_grey (40%,4px);
+    }
 }
