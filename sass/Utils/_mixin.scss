@@ -1,3 +1,21 @@
 @mixin shadow_grey ($percentage:10%, $fade:10px) {
     box-shadow: 1px 4px $fade darken($color-grey, $percentage);
 }
+
+@mixin color-heart {
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(to top, $color-secondary,$color-primary);
+}
+
+@mixin desktop {
+    @media all and (min-width:992px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media all and (min-width:768px) and (max-width:992px){
+        @content
+    }
+}

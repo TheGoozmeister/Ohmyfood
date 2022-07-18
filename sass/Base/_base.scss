@@ -22,9 +22,12 @@ footer {
     width: 100%;
     flex-direction: column;
     background-color: $color-footer-bg;
-        h1{
-            margin-left: 40px;
-            margin-top: 20px;
+    @include desktop {
+        padding-left: 10%;
+    }
+    h1{
+        margin-left: 40px;
+        margin-top: 20px;
     }
     ul {
         list-style-type: none;
