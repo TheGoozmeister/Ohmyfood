@@ -61,8 +61,26 @@
         &__heart {
             font-size: 30px;
             margin-left: 10px;
+            position:relative;
+            &:hover > .heart__full{
+                transform: scale(1);
+            }
+            &:hover {
+                @include color-heart;
+            }
+            
         }
     }
+.heart__full {
+    position: absolute;
+    top:0px;
+    @include color-heart;
+    transform : scale(0);
+    transition : 0.2s;
+    &:hover {
+        transform: scale(1);
+    }
+}
     &__type__title {
         font-weight: 300;
         text-transform: uppercase;
@@ -177,6 +195,7 @@
         transition: transform $timing-check, width $timing-check;
         i { 
             border-radius: 100%;
+            font-size: 22px;
             border: 0px;
             transform: rotate(0deg);
             transition: transform 1s;

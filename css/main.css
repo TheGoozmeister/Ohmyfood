@@ -246,6 +246,27 @@ footer h1 {
 .menu__title__heart {
   font-size: 30px;
   margin-left: 10px;
+  position: relative;
+}
+.menu__title__heart:hover > .heart__full {
+  transform: scale(1);
+}
+.menu__title__heart:hover {
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(to top, #FF79DA, #9356DC);
+}
+.menu .heart__full {
+  position: absolute;
+  top: 0px;
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(to top, #FF79DA, #9356DC);
+  transform: scale(0);
+  transition: 0.2s;
+}
+.menu .heart__full:hover {
+  transform: scale(1);
 }
 .menu__type__title {
   font-weight: 300;
@@ -375,6 +396,7 @@ footer h1 {
 }
 .dish__checked i {
   border-radius: 100%;
+  font-size: 22px;
   border: 0px;
   transform: rotate(0deg);
   transition: transform 1s;
